@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegistrationForn</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c32d95896d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script src="app.js"></script>
+    <nav class="navbar sticky-top navbar-expand-lg bg-white">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <i class="fas fa-bars"></i>
+      </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+            <ul  class="navbar-nav mr-auto w-100 justify-content-end" style="font-size: 15px; margin-bottom: 6%px; margin-right: 5%;">
+                <li id="color" class="nav-item"><a href="#">ჩვენზე</a></li>
+                <li><a href="#">თემები</a></li>
+                <li><a href="#">რესურსები</a></li>
+            </ul>
+            <ul class="button">
+                <button class="dropbtn">შესვლა<class="fa fa-caret-down"></button>
+                <ul>
+                    <button id="search-bar"><i class="fas fa-search"></i></button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+        <ul>
+            <li><a href="#">მთავარი</a></li>
+            <div><i id="fal fa-angle-right"></i>>
+                <li><a href="#">რეგისტრაცია</a></li>
+            </div>
+        </ul>    
+    </div>
+    <ul>
+        <div class="text-1">რეგისტრაცია</div>
+    </ul>
+        <div class="placeholder">
+            <ul>
+                <div>ავტორიზაცია შესაძლებელია მხოლოდ</div><span></span>
+                <div class="text-2">განმანათლებლებისთვის</div><span></span>
+            </ul>    
+        </div>
+        <div class="form-div">
+            <div class="inner-form">
+                
+            </div>
+            <form class="section" style="display: grid; align-items: center; justify-content: center; font-weight: 600; margin-top: 39px; margin-right: 60px;"><br>
+                <div>
+                    <label for="">რეგიონი</label><span class="star">*</span><br><br>
+                    <select required class="txt"><i class="fas fa-caret-down"></i><br><br>
+                        <option value=""  disabled selected hidden>აირჩიეთ რეგიონი</option>
+                        <option value="">სხვა</option>
+                        <option value="1">თბილისი</option>
+                        <option value="2">აფხაზეთი</option>
+                        <option value="3">აჭარა</option>
+                        <option value="4">გურია</option>
+                        <option value="5">კახეთი</option>
+                        <option value="6">მცხეთა-მთიანეთი</option>
+                        <option value="7">რაჭა-ლეჩხუმი და ქვემო-სვანეთ</option>
+                        <option value="8">სამეგრელო-ზემო სვანეთი</option>
+                        <option value="9">სამცხე-ჯავახეთი</option>
+                        <option value="10">ქვემო ქართლი</option>
+                        <option value="11">შიდა ქართლი</option>
+                    </select>
+                </div>
+                <div><br>
+                    <label for="">პოზიცია</label><span class="star">*</span><br><br>
+                    <select id=""required class="txt"><br><br>
+                        <option value="" disabled selected hidden>აირჩიეთ პოზიცია</option>
+                        <option value="1">მასწავლებელი</option>
+                        <option value="2">სამართალდამცავი</option>
+                        <option value="">სხვა</option>
+                    </select>
+                    <div><br>
+                        <label for="">სამუშაო ადგილი</label><br><br>
+                        <input class="input-form" type="text"><br><br>
+                    </div>
+                    <div>
+                        <label for="email">ელ.ფოსტა</label><span class="star">*</span><br><br>
+                        <input class="input-form" type="text"  name="email"><br><br>
+                    </div>
+                    <div>
+                        <label for="name">სახელი</label><span class="star">*</span><br><br>
+                        <input class="input-form" type="text"><br><br>
+                    </div>
+                    <div>
+                        <label for="lastname">გვარი</label><span class="star">*</span><br><br>
+                        <input class="input-form" type="text"><br><br>
+                    </div>
+                    <div class="inputbox">
+                        <label for="name">პაროლი</label><span class="star">*</span><br><br>
+                        <input type="password" class="input-form"  id="password"><br><br>
+                        <span class="hidden"  onclick="input_clicked()"> 
+                            <i id="hide1" class="far fa-eye-slash"></i>
+                        </span>
+                    <div>
+                        <label for="cnfrm-password">გაიმეორეთ პაროლი</label><span class="star">*</span><br><br>
+                        <input type="confirm-password" class="input-form" onclick="checkPassword()"><br><br>
+                    </div>
+                </div>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Default checkbox
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Checked checkbox
+                    </label>
+                  </div>
+                  <button class="btn btn-primary" style="margin-top: 20px; width: 150%;">რეგისტრაცია</button>
+                </form>
+
+                <div class="box">
+                    <p style="margin-top: 20px; margin-left: 50px;">-------------------------------  ან  -----------------------------------</p>
+                    <button style="margin-top: 20px;" class="btn btn-primary">რეგისტრაცია Facebook-ით</button>
+                    <button style="margin-top: 20px;" class="btn btn-primary">რეგისტრაცია Gmail-ით</button>
+                </div>
+        </div>
+        
+        
+        
+            <!-- <div class="line-break">
+                <p class="line">- - - - - - - - - - - &emsp;&emsp;ან&emsp;&emsp; - - - - - - - - - - -</p>
+            </div>
+            <div class="social-media">
+                <button>რეგისტრაცია Facebook-ით</button>
+            </div>
+            <div class="social-media">
+                <button>რეგისტრაცია Gmail-ით</button>
+            </div> -->
+</body>
+</html>
+
+
+

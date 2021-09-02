@@ -1,0 +1,31 @@
+function input_clicked(){
+    var password_input = document.getElementById("password");
+    var show_password = document.getElementById("hide1");
+    if(password_input.type === 'text'){
+        password_input.type ='password';
+
+        show_password.classList.remove("fa-eye-slash");
+        show_password.classList.add("fa-eye");
+    }
+    else{
+        password_input.type = 'text';
+        show_password.classList.remove("fa-eye");
+        show_password.classList.add("fa-eye-slash");
+    }
+}
+
+function input_unclicked(){
+    var password_input = document.getElementById("password");
+    var show_password = document.getElementById("appear");
+    if(password_input.type === 'text'){
+        password_input.type ='password';
+
+        show_password.classList.remove("fa-eye");
+        show_password.classList.add("fa-eye-slash");
+    }
+    else{
+        password_input.type = 'password';
+        show_password.classList.remove("fa-eye-slash");
+        show_password.classList.add("fa-eye");
+    }
+}
